@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
   Нормализация блочной модели
  */
@@ -58,6 +57,7 @@ body,
  */
 p {
   --paragraphMarginBottom: 24px;
+
   margin-block: 0;
 }
 
@@ -117,7 +117,6 @@ body {
 svg *[fill] {
   fill: currentColor;
 }
-
 svg *[stroke] {
   stroke: currentColor;
 }
