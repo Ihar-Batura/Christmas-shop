@@ -1,0 +1,36 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.section-about {
+  padding: 60px 82px;
+}
+
+.section-about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  background-color: $color-static;
+  border-radius: 20px;
+}
+
+.section-about__container-text {
+  width: 100%;
+  max-width: 426px;
+  padding: 60px 0;
+  margin-right: 60px;
+  .caption {
+    color: $color-primary;
+  }
+  h3 {
+    margin: 20px 0;
+  }
+}
+
+.section-about__container-img {
+  width: 100%;
+  max-width: 638px;
+  height: 528px;
+  border-radius: 20px;
+  background: url(../assets/img/santa.png) center center / cover no-repeat;
+}
