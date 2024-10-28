@@ -1,0 +1,25 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.section-slider {
+  padding: 60px 80px;
+}
+
+.section-slider__container {
+  text-align: center;
+  border: 1px solid yellow;
+  h3 {
+    color: $color-static;
+  }
+}
+
+.slider__line {
+  border: 2px solid rgb(49, 21, 142);
+}
+
+.slider__btn-container {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  border: 2px solid rgb(142, 21, 67);
+}

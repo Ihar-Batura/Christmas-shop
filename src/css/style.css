@@ -379,6 +379,75 @@ p {
   background: url(../assets/img/santa.png) center center/cover no-repeat;
 }
 
+h2 {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  margin: 12px 0 28px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.08em;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 148%;
+}
+
+.caption {
+  font-family: "Allura", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.slider-text {
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-slider {
+  padding: 60px 80px;
+}
+
+.section-slider__container {
+  text-align: center;
+  border: 1px solid yellow;
+}
+.section-slider__container h3 {
+  color: #ffffff;
+}
+
+.slider__line {
+  border: 2px solid rgb(49, 21, 142);
+}
+
+.slider__btn-container {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  border: 2px solid rgb(142, 21, 67);
+}
+
 .btn-explore {
   color: #ffffff;
   background-color: #181c29;
@@ -394,4 +463,14 @@ p {
 .btn-explore:hover {
   color: #181c29;
   background-color: #ffffff;
+}
+
+.slider-btn {
+  width: 56px;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+}
+.slider-btn img {
+  width: 24px;
 }
