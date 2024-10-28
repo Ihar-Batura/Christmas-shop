@@ -1,0 +1,59 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.gift-card {
+  width: 310px;
+  background-color: $color-dirty;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &:hover {
+    .gift-card__text-container {
+      h4 {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.gift-card__img {
+  width: 310px;
+  height: 230px;
+}
+
+.gift-work {
+  background: url(../assets/img/img-work.png) center center / cover no-repeat;
+}
+
+.gift-health {
+  background: url(../assets/img/img-health.png) center center / cover no-repeat;
+}
+
+.gift-harmony {
+  background: url(../assets/img/img-harmony.png) center center / cover no-repeat;
+}
+
+.gift-card__text-container {
+  height: 112px;
+  text-align: start;
+  padding: 20px 20px 0;
+  border-radius: 20px;
+  background-color: $color-static;
+  h4 {
+    margin-top: 10px;
+    line-height: 149%;
+    transition: 0.5s ease-out;
+  }
+}
+
+.gift-card__for-work {
+  color: $color-tag-work;
+}
+
+.gift-card__for-health {
+  color: $color-tag-health;
+}
+
+.gift-card__for-harmony {
+  color: $color-tag-harmony;
+}

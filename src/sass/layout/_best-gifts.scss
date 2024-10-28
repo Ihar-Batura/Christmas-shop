@@ -1,0 +1,19 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.section-bestGifts {
+  padding: 60px 82px;
+}
+
+.section-bestGifts__container {
+  text-align: center;
+  h3 {
+    color: $color-static;
+    margin: 12px 0 20px;
+  }
+}
+
+.bestGifts-cards__container {
+  display: flex;
+  justify-content: space-between;
+}

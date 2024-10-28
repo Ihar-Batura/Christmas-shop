@@ -231,12 +231,7 @@ p {
   padding: 8px 20px;
   text-decoration: none;
   border-radius: 4px;
-  border: 1px dashed transparent;
   transition: 0.5s ease-out;
-}
-.header__logo:hover {
-  background-color: rgba(6, 164, 79, 0.1);
-  border: 1px dashed #06a44f;
 }
 
 h1 {
@@ -259,14 +254,9 @@ h1 {
   padding: 12px 20px;
   text-decoration: none;
   border-radius: 4px;
-  border: 1px dashed transparent;
   transition: 0.5s ease-out;
 }
 .header__navigation li a:hover {
-  background-color: rgba(6, 164, 79, 0.1);
-  border: 1px dashed #06a44f;
-}
-.header__navigation li a:active {
   color: #ff4646;
   background-color: rgba(255, 70, 70, 0.1);
 }
@@ -480,6 +470,70 @@ p {
   gap: 20px;
 }
 
+h2 {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  margin: 12px 0 28px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.08em;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 148%;
+}
+
+.caption {
+  font-family: "Allura", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.slider-text {
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-bestGifts {
+  padding: 60px 82px;
+}
+
+.section-bestGifts__container {
+  text-align: center;
+}
+.section-bestGifts__container h3 {
+  color: #ffffff;
+  margin: 12px 0 20px;
+}
+
+.bestGifts-cards__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn-explore {
   color: #ffffff;
   background-color: #181c29;
@@ -517,4 +571,103 @@ p {
 
 .slider-btn:hover svg path {
   stroke: #ff4646;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  margin: 12px 0 28px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.08em;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 148%;
+}
+
+.caption {
+  font-family: "Allura", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.slider-text {
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.gift-card {
+  width: 310px;
+  background-color: #ecf3f8;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.gift-card:hover .gift-card__text-container h4 {
+  color: #ff4646;
+}
+
+.gift-card__img {
+  width: 310px;
+  height: 230px;
+}
+
+.gift-work {
+  background: url(../assets/img/img-work.png) center center/cover no-repeat;
+}
+
+.gift-health {
+  background: url(../assets/img/img-health.png) center center/cover no-repeat;
+}
+
+.gift-harmony {
+  background: url(../assets/img/img-harmony.png) center center/cover no-repeat;
+}
+
+.gift-card__text-container {
+  height: 112px;
+  text-align: start;
+  padding: 20px 20px 0;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+.gift-card__text-container h4 {
+  margin-top: 10px;
+  line-height: 149%;
+  transition: 0.5s ease-out;
+}
+
+.gift-card__for-work {
+  color: #4361ff;
+}
+
+.gift-card__for-health {
+  color: #06a44f;
+}
+
+.gift-card__for-harmony {
+  color: #ff43f7;
 }
