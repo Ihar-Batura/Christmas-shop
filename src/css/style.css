@@ -210,6 +210,7 @@ p {
   font-size: 80px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .header {
@@ -281,6 +282,7 @@ h1 {
   margin: 0 auto;
   background-color: #ff4646;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .section-hero {
@@ -343,6 +345,7 @@ p {
   font-size: 80px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .section-about {
@@ -423,6 +426,7 @@ p {
   font-size: 80px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .section-slider {
@@ -431,21 +435,49 @@ p {
 
 .section-slider__container {
   text-align: center;
-  border: 1px solid yellow;
 }
 .section-slider__container h3 {
+  margin-top: 12px;
   color: #ffffff;
 }
 
 .slider__line {
-  border: 2px solid rgb(49, 21, 142);
+  width: 1993px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.slider-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.slider-photo__one {
+  background: url(../assets/img/slider-1.png) center center/cover no-repeat;
+}
+
+.slider-photo__two {
+  background: url(../assets/img/slider-2.png) center center/cover no-repeat;
+}
+
+.slider-photo__three {
+  background: url(../assets/img/slider-3.png) center center/cover no-repeat;
+}
+
+.slider-photo__four {
+  background: url(../assets/img/slider-4.png) center center/cover no-repeat;
 }
 
 .slider__btn-container {
   display: flex;
   justify-content: end;
   gap: 20px;
-  border: 2px solid rgb(142, 21, 67);
 }
 
 .btn-explore {
@@ -467,10 +499,22 @@ p {
 
 .slider-btn {
   width: 56px;
-  padding: 16px;
+  padding: 16px 0 14px;
   border-radius: 20px;
   border: 1px solid #ffffff;
+  transition: 0.5s ease-out;
+  cursor: pointer;
 }
-.slider-btn img {
-  width: 24px;
+.slider-btn svg {
+  width: 16px;
+}
+.slider-btn svg path {
+  stroke: #ffffff;
+}
+.slider-btn:hover {
+  background-color: #ffffff;
+}
+
+.slider-btn:hover svg path {
+  stroke: #ff4646;
 }
