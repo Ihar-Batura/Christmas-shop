@@ -150,6 +150,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 p {
@@ -163,6 +164,50 @@ body {
   color: #181c29;
   background-color: #ffffff;
   box-sizing: border-box;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.08em;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+.caption {
+  font-family: "Allura", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+}
+
+.slider-text {
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .header {
@@ -194,8 +239,7 @@ body {
 h1 {
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .header__navigation {
@@ -207,7 +251,7 @@ h1 {
   font-size: 12px;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 12px 20px;
   text-decoration: none;
@@ -227,4 +271,11 @@ h1 {
   color: #ff4646;
   background-color: rgba(255, 70, 70, 0.1);
   border-radius: 12px;
+}
+
+.main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 2px solid gray;
 }

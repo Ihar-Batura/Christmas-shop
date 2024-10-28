@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0 auto;
   padding: 9px 82px 12px;
 }
@@ -30,8 +29,7 @@
 h1 {
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .header__navigation {
@@ -43,7 +41,7 @@ h1 {
       font-size: 12px;
       font-weight: 600;
       line-height: 130%;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       padding: 12px 20px;
       text-decoration: none;
