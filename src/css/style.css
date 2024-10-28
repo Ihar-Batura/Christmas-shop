@@ -170,6 +170,8 @@ h2 {
   font-size: 32px;
   line-height: 150%;
   letter-spacing: 0.18em;
+  color: #ffffff;
+  margin: 12px 0 28px;
 }
 
 h3 {
@@ -202,6 +204,7 @@ p {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 .slider-text {
@@ -217,7 +220,7 @@ p {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 9px 82px 12px;
+  padding: 10px 82px 12px;
 }
 
 .header__logo {
@@ -277,5 +280,39 @@ h1 {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  border: 2px solid gray;
+  background-color: #ff4646;
+  border-radius: 20px;
+}
+
+.section-hero {
+  padding: 60px 0;
+}
+
+.section-hero__text-container {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-hero__text-container p:last-child {
+  margin-top: 28px;
+}
+
+.btn-explore {
+  color: #ffffff;
+  background-color: #181c29;
+  text-decoration: none;
+  padding: 20px 32px;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: 0.5s ease-out;
+}
+.btn-explore:hover {
+  color: #181c29;
+  background-color: #ffffff;
 }

@@ -1,3 +1,17 @@
+@import '../abstracts/variables';
+
 .section-hero {
-  border: 1px solid green;
+  padding: 60px 0;
+}
+
+.section-hero__text-container {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-hero__text-container p:last-child {
+  margin-top: 28px;
 }
