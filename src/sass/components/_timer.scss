@@ -1,0 +1,41 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.timer {
+  width: 344px;
+  margin: 0 auto;
+  padding: 8px 12px 12px;
+  border-radius: 20px;
+  background-color: $color-timer;
+}
+
+.timer-items,
+.timer-values {
+  display: flex;
+}
+
+.timer-item,
+.timer-value {
+  width: 80px;
+  font-weight: 600;
+  color: $color-static;
+}
+
+.timer-item {
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+}
+
+.timer-value {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.timer-border {
+  height: 20px;
+  margin-top: 16px;
+  border-right: 1px solid $color-timer;
+}

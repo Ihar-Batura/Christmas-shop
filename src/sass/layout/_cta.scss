@@ -1,0 +1,20 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.section-cta {
+  padding: 60px 82px;
+}
+
+.section-cta__container {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 120px 0 0;
+  text-align: center;
+  h3 {
+    color: $color-static;
+    margin-bottom: 35px;
+  }
+  .caption {
+    margin: 38px 0 8px;
+  }
+}
