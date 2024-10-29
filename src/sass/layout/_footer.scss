@@ -1,0 +1,12 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.footer {
+  padding: 60px 82px;
+  border: 1px solid black;
+}
+
+.footer-contacts__container {
+  display: flex;
+  gap: 12px;
+}
