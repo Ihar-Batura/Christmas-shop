@@ -42,3 +42,21 @@
     }
   }
 }
+
+.inactive {
+  cursor: default;
+  border-color: $color-timer;
+  &:hover {
+    background-color: transparent;
+    svg {
+      path {
+        stroke: $color-timer;
+      }
+    }
+  }
+  svg {
+    path {
+      stroke: $color-timer;
+    }
+  }
+}

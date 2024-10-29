@@ -748,6 +748,20 @@ p {
   stroke: #ff4646;
 }
 
+.inactive {
+  cursor: default;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.inactive:hover {
+  background-color: transparent;
+}
+.inactive:hover svg path {
+  stroke: rgba(255, 255, 255, 0.4);
+}
+.inactive svg path {
+  stroke: rgba(255, 255, 255, 0.4);
+}
+
 h2 {
   font-size: 32px;
   line-height: 150%;
