@@ -16,7 +16,7 @@
   padding: 12px 20px;
   color: $color-static;
   border-radius: 12px;
-  transition: 0.5s ease-out;
+  transition: $transition;
   cursor: pointer;
   &:hover {
     background-color: $color-tab-hover;

@@ -10,7 +10,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-radius: 20px;
-  transition: 0.5s ease-out;
+  transition: $transition;
   &:hover {
     color: $color-dark;
     background-color: $color-static;
@@ -22,7 +22,7 @@
   padding: 16px 0 14px;
   border-radius: 20px;
   border: 1px solid $color-static;
-  transition: 0.5s ease-out;
+  transition: $transition;
   cursor: pointer;
   svg {
     width: 16px;

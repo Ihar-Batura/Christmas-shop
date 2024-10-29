@@ -1,7 +1,7 @@
 @import '../abstracts/variables';
 
 .section-gifts {
-  padding: 60px 82px;
+  padding: $padding-main;
   background: url(../assets/img/bg-garland.png) top no-repeat;
   background-size: contain;
 }
