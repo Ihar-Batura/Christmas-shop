@@ -1,0 +1,26 @@
+@import '../abstracts/variables';
+
+.gifts-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tab {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  color: $color-static;
+  border-radius: 12px;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-tab-hover;
+  }
+  &.active {
+    background-color: $color-tab-hover;
+  }
+}

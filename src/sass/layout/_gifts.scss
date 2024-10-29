@@ -1,0 +1,14 @@
+@import '../abstracts/variables';
+
+.section-gifts {
+  padding: 60px 82px;
+  background: url(../assets/img/bg-garland.png) top center / cover no-repeat;
+}
+
+.section-gifts__container {
+  h2 {
+    max-width: 426px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

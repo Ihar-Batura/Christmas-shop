@@ -248,26 +248,6 @@ p {
   width: 376px;
   justify-content: space-between;
 }
-.header__navigation li a {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 12px;
-  color: #181c29;
-  transition: 0.5s ease-out;
-}
-.header__navigation li a:hover {
-  color: #ff4646;
-  background-color: rgba(255, 70, 70, 0.1);
-}
-.header__navigation li a.active {
-  color: #ff4646;
-  background-color: rgba(255, 70, 70, 0.1);
-}
 
 .main {
   width: 100%;
@@ -277,6 +257,10 @@ p {
   border-radius: 20px;
   overflow: hidden;
   background-image: url(../assets/img/bg-snow.png);
+}
+
+.main-gifts {
+  background-image: none;
 }
 
 .section-hero {
@@ -642,6 +626,17 @@ p {
   margin: 38px 0 6px;
 }
 
+.section-gifts {
+  padding: 60px 82px;
+  background: url(../assets/img/bg-garland.png) top center/cover no-repeat;
+}
+
+.section-gifts__container h2 {
+  max-width: 426px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 h1 {
   font-size: 12px;
   line-height: 130%;
@@ -699,6 +694,9 @@ p {
 }
 
 .footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 60px 82px;
 }
 
@@ -743,6 +741,33 @@ p {
 }
 .social-media__element:hover svg path {
   stroke: #ff4646;
+}
+
+li a {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 12px;
+  color: #181c29;
+  transition: 0.5s ease-out;
+}
+li a:hover {
+  color: #ff4646;
+  background-color: rgba(255, 70, 70, 0.1);
+}
+li a.active {
+  color: #ff4646;
+  background-color: rgba(255, 70, 70, 0.1);
+}
+
+.inactive-link {
+  color: #ff4646;
+  background-color: rgba(255, 70, 70, 0.1);
+  cursor: default;
 }
 
 .btn-explore {
@@ -796,12 +821,6 @@ p {
 }
 .inactive-btn svg path {
   stroke: rgba(255, 255, 255, 0.4);
-}
-
-.header__navigation li a.inactive-link {
-  color: #ff4646;
-  background-color: rgba(255, 70, 70, 0.1);
-  cursor: default;
 }
 
 h1 {
@@ -1082,4 +1101,29 @@ p {
 }
 .contact-card h3 {
   margin: 12px 0;
+}
+
+.gifts-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tab {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  color: #ffffff;
+  border-radius: 12px;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.tab.active {
+  background-color: rgba(255, 255, 255, 0.2);
 }

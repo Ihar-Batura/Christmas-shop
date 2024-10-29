@@ -25,26 +25,4 @@
   display: flex;
   width: 376px;
   justify-content: space-between;
-  li {
-    a {
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 130%;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding: 12px 20px;
-      text-decoration: none;
-      border-radius: 12px;
-      color: $color-dark;
-      transition: 0.5s ease-out;
-      &:hover {
-        color: $color-primary;
-        background-color: $color-primary-hover;
-      }
-      &.active {
-        color: $color-primary;
-        background-color: $color-primary-hover;
-      }
-    }
-  }
 }
