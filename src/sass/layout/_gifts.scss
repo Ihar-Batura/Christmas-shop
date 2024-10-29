@@ -2,7 +2,8 @@
 
 .section-gifts {
   padding: 60px 82px;
-  background: url(../assets/img/bg-garland.png) top no-repeat; // нужно доработать
+  background: url(../assets/img/bg-garland.png) top no-repeat;
+  background-size: contain;
 }
 
 .section-gifts__container {

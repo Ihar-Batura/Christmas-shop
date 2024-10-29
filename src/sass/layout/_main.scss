@@ -5,10 +5,11 @@
   background-color: $color-primary;
   border-radius: 20px;
   overflow: hidden; // обрезает слайдер
-  background-image: url(../assets/img/bg-snow.png);
-  // картинку BG нужно будет подкорректировать
 }
 
-.main-gifts {
-  background-image: none;
+.main-snow {
+  // картинку BG нужно будет подкорректировать
+  background-image: url(../assets/img/bg-snow.png);
+  background-repeat: round;
+  background-size: contain;
 }

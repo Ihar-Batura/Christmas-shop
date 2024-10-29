@@ -256,11 +256,12 @@ p {
   background-color: #ff4646;
   border-radius: 20px;
   overflow: hidden;
-  background-image: url(../assets/img/bg-snow.png);
 }
 
-.main-gifts {
-  background-image: none;
+.main-snow {
+  background-image: url(../assets/img/bg-snow.png);
+  background-repeat: round;
+  background-size: contain;
 }
 
 .section-hero {
@@ -631,6 +632,7 @@ p {
 .section-gifts {
   padding: 60px 82px;
   background: url(../assets/img/bg-garland.png) top no-repeat;
+  background-size: contain;
 }
 
 .section-gifts__container h2 {
