@@ -273,10 +273,12 @@ h1 {
   background-color: #ff4646;
   border-radius: 20px;
   overflow: hidden;
+  background-image: url(../assets/img/bg-snow.png);
 }
 
 .section-hero {
   padding: 60px 0;
+  background: url(../assets/img/bg-ball.png) center center/cover no-repeat;
 }
 
 .section-hero__text-container {
@@ -583,12 +585,13 @@ p {
 
 .section-cta {
   padding: 60px 82px;
+  background: url(../assets/img/bg-forest.png) center center/cover no-repeat;
 }
 
 .section-cta__container {
   max-width: 430px;
   margin: 0 auto;
-  padding: 120px 0 0;
+  padding: 120px 0;
   text-align: center;
 }
 .section-cta__container h3 {
