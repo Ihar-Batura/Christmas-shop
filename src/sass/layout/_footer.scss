@@ -3,10 +3,54 @@
 
 .footer {
   padding: 60px 82px;
-  border: 1px solid black;
 }
 
 .footer-contacts__container {
   display: flex;
   gap: 12px;
+  margin-bottom: 60px;
+}
+
+.footer-social__container {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: $color-dark;
+    transition: 0.5s ease-out;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  p {
+    margin: 12px 0;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-media__element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: 0.5s ease-out;
+  svg {
+    path {
+      stroke: $color-dark;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        stroke: $color-primary;
+      }
+    }
+  }
 }

@@ -25,7 +25,7 @@
 }
 
 .slider-photo {
-  width: 200px;
+  min-width: 200px;
   height: 200px;
   border-radius: 20px;
 }
@@ -46,5 +46,6 @@
 .slider__btn-container {
   display: flex;
   justify-content: end;
+  margin-right: 2px;
   gap: 20px;
 }

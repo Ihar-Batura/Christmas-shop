@@ -5,7 +5,7 @@ h2 {
   line-height: 150%;
   letter-spacing: 0.18em;
   color: $color-static;
-  margin: 12px 0 28px;
+  margin: 12px 0 27px;
 }
 
 h3 {
@@ -43,6 +43,8 @@ p {
 .slider-text {
   font-size: 80px;
   font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.005em;
   text-transform: uppercase;
   color: $color-static;
 }
