@@ -17,14 +17,8 @@
   width: 141px;
   padding: 8px 20px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 12px;
   transition: 0.5s ease-out;
-}
-
-h1 {
-  font-size: 12px;
-  line-height: 130%;
-  letter-spacing: 0.05em;
 }
 
 .header__navigation {
@@ -40,7 +34,8 @@ h1 {
       text-transform: uppercase;
       padding: 12px 20px;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 12px;
+      color: $color-dark;
       transition: 0.5s ease-out;
       &:hover {
         color: $color-primary;
@@ -49,7 +44,6 @@ h1 {
       &.active {
         color: $color-primary;
         background-color: $color-primary-hover;
-        border-radius: 12px;
       }
     }
   }

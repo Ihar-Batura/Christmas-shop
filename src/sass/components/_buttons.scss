@@ -43,7 +43,7 @@
   }
 }
 
-.inactive {
+.inactive-btn {
   cursor: default;
   border-color: $color-timer;
   &:hover {
@@ -59,4 +59,10 @@
       stroke: $color-timer;
     }
   }
+}
+
+.header__navigation li a.inactive-link {
+  color: $color-primary;
+  background-color: $color-primary-hover;
+  cursor: default;
 }
