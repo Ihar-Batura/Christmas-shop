@@ -14,8 +14,10 @@ li {
     color: $color-dark;
     transition: $transition;
     &:hover {
-      color: $color-primary;
-      background-color: $color-primary-hover;
+      @media (hover: hover) {
+        color: $color-primary;
+        background-color: $color-primary-hover;
+      }
     }
     &.active {
       color: $color-primary;

@@ -8,9 +8,11 @@
   cursor: pointer;
 
   &:hover {
-    .gift-card__text-container {
-      h4 {
-        color: $color-primary;
+    @media (hover: hover) {
+      .gift-card__text-container {
+        h4 {
+          color: $color-primary;
+        }
       }
     }
   }

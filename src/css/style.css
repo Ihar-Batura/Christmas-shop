@@ -853,8 +853,10 @@ p {
   color: #181c29;
   transition: 0.5s ease-out;
 }
-.footer-social__container a:hover {
-  color: #ff4646;
+@media (hover: hover) {
+  .footer-social__container a:hover {
+    color: #ff4646;
+  }
 }
 .footer-social__container p {
   margin: 12px 0;
@@ -878,8 +880,10 @@ p {
 .social-media__element svg path {
   stroke: #181c29;
 }
-.social-media__element:hover svg path {
-  stroke: #ff4646;
+@media (hover: hover) {
+  .social-media__element:hover svg path {
+    stroke: #ff4646;
+  }
 }
 
 h1 {
@@ -989,9 +993,11 @@ li a {
   color: #181c29;
   transition: 0.5s ease-out;
 }
-li a:hover {
-  color: #ff4646;
-  background-color: rgba(255, 70, 70, 0.1);
+@media (hover: hover) {
+  li a:hover {
+    color: #ff4646;
+    background-color: rgba(255, 70, 70, 0.1);
+  }
 }
 li a.active {
   color: #ff4646;
@@ -1022,9 +1028,11 @@ li a.active {
   border-radius: 20px;
   transition: 0.5s ease-out;
 }
-.btn-explore:hover {
-  color: #181c29;
-  background-color: #ffffff;
+@media (hover: hover) {
+  .btn-explore:hover {
+    color: #181c29;
+    background-color: #ffffff;
+  }
 }
 
 .slider-btn {
@@ -1041,12 +1049,16 @@ li a.active {
 .slider-btn svg path {
   stroke: #ffffff;
 }
-.slider-btn:hover {
-  background-color: #ffffff;
+@media (hover: hover) {
+  .slider-btn:hover {
+    background-color: #ffffff;
+  }
 }
 
-.slider-btn:hover svg path {
-  stroke: #ff4646;
+@media (hover: hover) {
+  .slider-btn:hover svg path {
+    stroke: #ff4646;
+  }
 }
 
 .inactive-btn {
@@ -1125,8 +1137,10 @@ p {
   border-radius: 20px;
   cursor: pointer;
 }
-.gift-card:hover .gift-card__text-container h4 {
-  color: #ff4646;
+@media (hover: hover) {
+  .gift-card:hover .gift-card__text-container h4 {
+    color: #ff4646;
+  }
 }
 
 .gift-card__img {
@@ -1332,8 +1346,10 @@ p {
   background-color: #ecf3f8;
   transition: 0.5s ease-out;
 }
-.contact-card:hover {
-  color: #ff4646;
+@media (hover: hover) {
+  .contact-card:hover {
+    color: #ff4646;
+  }
 }
 .contact-card img {
   width: 80px;
@@ -1372,8 +1388,10 @@ p {
     padding: 12px 8px;
   }
 }
-.tab:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+@media (hover: hover) {
+  .tab:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 .tab.active {
   background-color: rgba(255, 255, 255, 0.2);

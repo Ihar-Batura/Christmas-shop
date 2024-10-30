@@ -11,7 +11,9 @@
   background-color: $color-dirty;
   transition: $transition;
   &:hover {
-    color: $color-primary;
+    @media (hover: hover) {
+      color: $color-primary;
+    }
   }
 
   img {

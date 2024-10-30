@@ -25,7 +25,9 @@
     padding: 12px 8px;
   }
   &:hover {
-    background-color: $color-tab-hover;
+    @media (hover: hover) {
+      background-color: $color-tab-hover;
+    }
   }
   &.active {
     background-color: $color-tab-hover;

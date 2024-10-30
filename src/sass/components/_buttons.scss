@@ -12,8 +12,11 @@
   border-radius: 20px;
   transition: $transition;
   &:hover {
-    color: $color-dark;
-    background-color: $color-static;
+    // для декстопа будет ховер для мобилбного устройства нет
+    @media (hover: hover) {
+      color: $color-dark;
+      background-color: $color-static;
+    }
   }
 }
 
@@ -31,14 +34,18 @@
     }
   }
   &:hover {
-    background-color: $color-static;
+    @media (hover: hover) {
+      background-color: $color-static;
+    }
   }
 }
 
 .slider-btn:hover {
-  svg {
-    path {
-      stroke: $color-primary;
+  @media (hover: hover) {
+    svg {
+      path {
+        stroke: $color-primary;
+      }
     }
   }
 }
