@@ -4,6 +4,15 @@
 .section-about {
   padding: $padding-main;
   background: url(../assets/img/bg-snow.png) center center / cover no-repeat;
+  @media (width < 1200px) {
+    padding: $padding-main-responsive-start;
+  }
+  @media (width < 1050px) {
+    padding: $padding-main-responsive-medium;
+  }
+  @media (width < 769px) {
+    padding: $padding-main-responsive-last;
+  }
 }
 
 .section-about__container {
@@ -13,6 +22,12 @@
   padding-left: 60px;
   background-color: $color-static;
   border-radius: 20px;
+  @media (width < 700px) {
+    flex-direction: column;
+  }
+  @media (width < 700px) {
+    padding-left: 0;
+  }
 }
 
 .section-about__container-text {
@@ -20,6 +35,14 @@
   max-width: 426px;
   padding: 60px 0;
   margin-right: 60px;
+  @media (width < 1050px) {
+    max-width: 258px;
+  }
+  @media (width < 700px) {
+    max-width: 324px;
+    margin-right: 0;
+  }
+
   .caption {
     color: $color-primary;
   }

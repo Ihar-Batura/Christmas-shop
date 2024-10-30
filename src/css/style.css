@@ -343,6 +343,21 @@ p {
   padding: 60px 82px;
   background: url(../assets/img/bg-snow.png) center center/cover no-repeat;
 }
+@media (width < 1200px) {
+  .section-about {
+    padding: 60px 48px;
+  }
+}
+@media (width < 1050px) {
+  .section-about {
+    padding: 60px 24px;
+  }
+}
+@media (width < 769px) {
+  .section-about {
+    padding: 60px 8px;
+  }
+}
 
 .section-about__container {
   display: flex;
@@ -352,12 +367,33 @@ p {
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media (width < 700px) {
+  .section-about__container {
+    flex-direction: column;
+  }
+}
+@media (width < 700px) {
+  .section-about__container {
+    padding-left: 0;
+  }
+}
 
 .section-about__container-text {
   width: 100%;
   max-width: 426px;
   padding: 60px 0;
   margin-right: 60px;
+}
+@media (width < 1050px) {
+  .section-about__container-text {
+    max-width: 258px;
+  }
+}
+@media (width < 700px) {
+  .section-about__container-text {
+    max-width: 324px;
+    margin-right: 0;
+  }
 }
 .section-about__container-text .caption {
   color: #ff4646;
