@@ -6,12 +6,23 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: $padding-main;
+
+  @media (width < 1400px) {
+    padding: $padding-main-responsive-medium;
+  }
+  @media (width < 1250px) {
+    padding: $padding-main-responsive-last;
+  }
 }
 
 .footer-contacts__container {
   display: flex;
   gap: 12px;
   margin-bottom: 60px;
+  @media (width < 1060px) {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 .footer-social__container {

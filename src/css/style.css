@@ -802,11 +802,27 @@ p {
   margin: 0 auto;
   padding: 60px 82px;
 }
+@media (width < 1400px) {
+  .footer {
+    padding: 60px 24px;
+  }
+}
+@media (width < 1250px) {
+  .footer {
+    padding: 60px 8px;
+  }
+}
 
 .footer-contacts__container {
   display: flex;
   gap: 12px;
   margin-bottom: 60px;
+}
+@media (width < 1060px) {
+  .footer-contacts__container {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 .footer-social__container {
