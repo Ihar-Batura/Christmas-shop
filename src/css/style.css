@@ -273,9 +273,9 @@ p {
 
 .section-hero__text-container {
   width: 100%;
-  max-width: 430px;
+  max-width: 436px;
   margin: 0 auto;
-  padding: 60px 0 61px;
+  padding: 60px 3px 61px;
   text-align: center;
 }
 
