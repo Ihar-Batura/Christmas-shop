@@ -258,15 +258,12 @@ p {
   overflow: hidden;
 }
 
-.main-snow {
-  background-image: url(../assets/img/bg-snow.png);
-  background-repeat: round;
-  background-size: contain;
-}
-
 .section-hero {
   padding: 60px 0;
-  background: url(../assets/img/bg-ball.png) center center/cover no-repeat;
+  background-image: url(../assets/img/bg-ball.png), url(../assets/img/bg-snow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .section-hero__text-container {
@@ -339,6 +336,7 @@ p {
 
 .section-about {
   padding: 60px 82px;
+  background: url(../assets/img/bg-snow.png) center center/cover no-repeat;
 }
 
 .section-about__container {
@@ -429,6 +427,7 @@ p {
 
 .section-slider {
   padding: 60px 80px;
+  background: url(../assets/img/bg-snow.png) center center/cover no-repeat;
 }
 
 .section-slider__container {
@@ -537,6 +536,7 @@ p {
 
 .section-bestGifts {
   padding: 60px 82px;
+  background: url(../assets/img/bg-snow.png) center center/cover no-repeat;
 }
 
 .section-bestGifts__container {
@@ -612,7 +612,10 @@ p {
 
 .section-cta {
   padding: 60px 82px;
-  background: url(../assets/img/bg-forest.png) center center/cover no-repeat;
+  background-image: url(../assets/img/bg-forest.png), url(../assets/img/bg-snow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .section-cta__container {
