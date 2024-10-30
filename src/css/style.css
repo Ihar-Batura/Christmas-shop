@@ -470,6 +470,21 @@ p {
   padding: 60px 80px;
   background: url(../assets/img/bg-snow.png) center center/cover no-repeat;
 }
+@media (width < 1200px) {
+  .section-slider {
+    padding: 60px 48px;
+  }
+}
+@media (width < 1050px) {
+  .section-slider {
+    padding: 60px 24px;
+  }
+}
+@media (width < 769px) {
+  .section-slider {
+    padding: 60px 8px;
+  }
+}
 
 .section-slider__container {
   text-align: center;
