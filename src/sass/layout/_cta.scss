@@ -8,6 +8,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (width < 1200px) {
+    padding: $padding-main-responsive-start;
+  }
+  @media (width < 1050px) {
+    padding: $padding-main-responsive-medium;
+  }
+  @media (width < 769px) {
+    padding: $padding-main-responsive-last;
+  }
 }
 
 .section-cta__container {
@@ -15,6 +24,9 @@
   margin: 0 auto;
   padding: 120px 0;
   text-align: center;
+  @media (width < 450px) {
+    max-width: 364px;
+  }
   h3 {
     color: $color-static;
     margin-bottom: 34px;

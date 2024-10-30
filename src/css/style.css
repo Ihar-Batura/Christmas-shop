@@ -693,12 +693,32 @@ p {
   background-position: center;
   background-size: cover;
 }
+@media (width < 1200px) {
+  .section-cta {
+    padding: 60px 48px;
+  }
+}
+@media (width < 1050px) {
+  .section-cta {
+    padding: 60px 24px;
+  }
+}
+@media (width < 769px) {
+  .section-cta {
+    padding: 60px 8px;
+  }
+}
 
 .section-cta__container {
   max-width: 430px;
   margin: 0 auto;
   padding: 120px 0;
   text-align: center;
+}
+@media (width < 450px) {
+  .section-cta__container {
+    max-width: 364px;
+  }
 }
 .section-cta__container h3 {
   color: #ffffff;
