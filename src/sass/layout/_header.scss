@@ -8,6 +8,9 @@
   align-items: center;
   margin: 0 auto;
   padding: 10px 82px 14px;
+  @media (width < 769px) {
+    padding: 12px 8px;
+  }
 }
 
 .header__logo {

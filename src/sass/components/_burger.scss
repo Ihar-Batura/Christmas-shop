@@ -1,0 +1,44 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.burger-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  @media (width < 769px) {
+    display: block;
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    border: 1px solid $color-dark;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    transition: $transition;
+  }
+
+  span:nth-child(1) {
+    top: 40%;
+  }
+  span:nth-child(2) {
+    top: 60%;
+  }
+}
+
+/* active burger */
+.burger-menu.active {
+  span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.burger-menu.active {
+  span:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

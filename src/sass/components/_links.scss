@@ -1,5 +1,6 @@
 @import '../abstracts/variables';
 
+// header links
 li {
   a {
     font-size: 12px;
@@ -27,4 +28,11 @@ li {
   color: $color-primary;
   background-color: $color-primary-hover;
   cursor: default;
+}
+
+//временно потом нужно будет убрать
+nav {
+  @media (width < 769px) {
+    display: none;
+  }
 }
