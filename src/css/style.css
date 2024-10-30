@@ -594,6 +594,21 @@ p {
   padding: 60px 82px;
   background: url(../assets/img/bg-snow.png) center center/cover no-repeat;
 }
+@media (width < 1200px) {
+  .section-bestGifts {
+    padding: 60px 48px;
+  }
+}
+@media (width < 1050px) {
+  .section-bestGifts {
+    padding: 60px 24px;
+  }
+}
+@media (width < 769px) {
+  .section-bestGifts {
+    padding: 60px 8px;
+  }
+}
 
 .section-bestGifts__container {
   text-align: center;
@@ -608,6 +623,11 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px 12px;
+}
+@media (width < 1440px) {
+  .gifts-card__container {
+    justify-content: center;
+  }
 }
 
 h1 {
