@@ -21,7 +21,7 @@ navLinks.forEach((link) => link.addEventListener('click', openBurger));
 
 // код для мониторинга ширины окна браузера, что бы закрывал бургер
 function initWindowWidth() {
-  windowWidth = window.innerWidth;
+  let windowWidth = window.innerWidth;
   if (windowWidth > 768) {
     closeBurger();
   }
