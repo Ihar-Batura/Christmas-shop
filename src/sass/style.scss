@@ -2,6 +2,7 @@
 @import 'base/normalize';
 @import 'base/base';
 @import 'base/text';
+@import 'layout/body';
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/hero';
@@ -13,7 +14,7 @@
 @import 'layout/footer';
 
 @import 'components/burger';
-@import 'components/links';
+@import 'components/navigation';
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/timer';

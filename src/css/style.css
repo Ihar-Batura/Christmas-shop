@@ -222,6 +222,16 @@ p {
   color: #ffffff;
 }
 
+body.unscroll {
+  overflow: hidden;
+}
+
+.body-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
 .header {
   width: 100%;
   max-width: 1440px;
@@ -246,12 +256,6 @@ p {
   text-decoration: none;
   border-radius: 12px;
   transition: 0.5s ease-out;
-}
-
-.header__navigation {
-  display: flex;
-  width: 376px;
-  justify-content: space-between;
 }
 
 .main {
@@ -947,6 +951,7 @@ p {
   width: 40px;
   height: 40px;
   position: relative;
+  margin-left: auto;
 }
 @media (width < 769px) {
   .burger-menu {
@@ -975,10 +980,39 @@ p {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
 }
-
 .burger-menu.active span:nth-child(2) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.navigation {
+  display: flex;
+  width: 376px;
+  justify-content: space-between;
+}
+@media (width < 769px) {
+  .navigation {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 64px;
+    left: 100%;
+    text-align: center;
+    padding-top: calc((100vh - 64px - 240px - 24px) / 2);
+    background-color: #ffffff;
+    transition: 0.5s ease-out;
+  }
+}
+@media (width < 769px) {
+  .navigation :nth-child(2n),
+  .navigation :nth-child(3n) {
+    margin-top: 8px;
+  }
+}
+
+.header.active .navigation {
+  transform: translateX(-100%);
 }
 
 li a {
@@ -1003,17 +1037,19 @@ li a.active {
   color: #ff4646;
   background-color: rgba(255, 70, 70, 0.1);
 }
+@media (width < 769px) {
+  li a {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+  }
+}
 
 .inactive-link {
   color: #ff4646;
   background-color: rgba(255, 70, 70, 0.1);
   cursor: default;
-}
-
-@media (width < 769px) {
-  nav {
-    display: none;
-  }
 }
 
 .btn-explore {

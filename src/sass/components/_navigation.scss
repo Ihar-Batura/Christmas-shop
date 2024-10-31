@@ -1,0 +1,68 @@
+@import '../abstracts/variables';
+
+.navigation {
+  display: flex;
+  width: 376px;
+  justify-content: space-between;
+
+  @media (width < 769px) {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 64px;
+    left: 100%;
+    text-align: center;
+    padding-top: calc((100vh - 64px - 240px - 24px) / 2);
+    background-color: $color-static;
+    transition: $transition;
+  }
+  :nth-child(2n),
+  :nth-child(3n) {
+    @media (width < 769px) {
+      margin-top: 8px;
+    }
+  }
+}
+
+.header.active .navigation {
+  transform: translateX(-100%);
+}
+
+// header links
+li {
+  a {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 12px;
+    color: $color-dark;
+    transition: $transition;
+    &:hover {
+      @media (hover: hover) {
+        color: $color-primary;
+        background-color: $color-primary-hover;
+      }
+    }
+    &.active {
+      color: $color-primary;
+      background-color: $color-primary-hover;
+    }
+    @media (width < 769px) {
+      display: inline-block;
+      font-size: 24px;
+      line-height: 152%;
+      letter-spacing: 0.16em;
+    }
+  }
+}
+
+.inactive-link {
+  color: $color-primary;
+  background-color: $color-primary-hover;
+  cursor: default;
+}

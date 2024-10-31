@@ -6,6 +6,7 @@
   width: 40px;
   height: 40px;
   position: relative;
+  margin-left: auto;
   @media (width < 769px) {
     display: block;
   }
@@ -34,9 +35,6 @@
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
-}
-
-.burger-menu.active {
   span:nth-child(2) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
