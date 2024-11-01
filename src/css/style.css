@@ -1111,6 +1111,29 @@ li a.active {
   stroke: rgba(255, 255, 255, 0.4);
 }
 
+.btn__back-top {
+  display: none;
+  width: 56px;
+  height: 56px;
+  padding: 16px 18px 18px 20px;
+  border: 1px solid #ff4646;
+  border-radius: 100px;
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.btn__back-top svg {
+  transform: rotate(-270deg);
+}
+.btn__back-top svg path {
+  stroke: #ff4646;
+}
+.btn__back-top.active {
+  display: block;
+}
+
 h1 {
   font-size: 12px;
   line-height: 130%;
