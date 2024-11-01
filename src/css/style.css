@@ -1178,6 +1178,9 @@ p {
     color: #ff4646;
   }
 }
+.gift-card.notShow {
+  display: none;
+}
 
 .gift-card__img {
   width: 310px;

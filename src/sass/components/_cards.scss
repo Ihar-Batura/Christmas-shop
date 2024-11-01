@@ -16,6 +16,10 @@
       }
     }
   }
+
+  &.notShow {
+    display: none;
+  }
 }
 
 .gift-card__img {

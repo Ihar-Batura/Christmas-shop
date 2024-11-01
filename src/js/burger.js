@@ -17,7 +17,7 @@ function closeBurger() {
 
 burgerBtn.addEventListener('click', openBurger);
 
-navLinks.forEach((link) => link.addEventListener('click', openBurger));
+navLinks.forEach((link) => link.addEventListener('click', closeBurger));
 
 // код для мониторинга ширины окна браузера, что бы закрывал бургер
 function initWindowWidth() {
