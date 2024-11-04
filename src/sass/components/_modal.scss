@@ -1,0 +1,88 @@
+@import '../abstracts/variables';
+@import '../base/text';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-modal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  z-index: 15;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  .gift-card__img {
+    width: 100%;
+  }
+
+  .gift-card__text-container {
+    height: 100%;
+    h4 {
+      margin: 8px 0;
+    }
+  }
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.modal-card__btn-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: url(../assets/img/close.png) center center / cover no-repeat;
+}
+
+.modal-card__superpower-container {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  h5 {
+    margin-bottom: 8px;
+  }
+}
+
+.superpower-value {
+  width: 40px;
+  font-weight: 400;
+}
+
+.superpower-description {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  p {
+    width: 100%;
+  }
+
+  .superpower-img__container {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.superpower-img__red {
+  width: 16px;
+  height: 16px;
+  background: url(../assets/img/snowflake-red.png) center center / cover
+    no-repeat;
+}
+
+.superpower-img__white {
+  width: 16px;
+  height: 16px;
+  background: url(../assets/img/snowflake-white.png) center center / cover
+    no-repeat;
+}

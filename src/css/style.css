@@ -1458,3 +1458,139 @@ p {
 .tab.active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+h1 {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: #181c29;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  margin: 12px 0 27px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.08em;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 148%;
+}
+
+.caption {
+  font-family: "Allura", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.slider-text {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(24, 28, 41, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  z-index: 15;
+  display: none;
+}
+.modal.active {
+  display: flex;
+}
+.modal .gift-card__img {
+  width: 100%;
+}
+.modal .gift-card__text-container {
+  height: 100%;
+}
+.modal .gift-card__text-container h4 {
+  margin: 8px 0;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.modal-card__btn-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: url(../assets/img/close.png) center center/cover no-repeat;
+}
+
+.modal-card__superpower-container {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.modal-card__superpower-container h5 {
+  margin-bottom: 8px;
+}
+
+.superpower-value {
+  width: 40px;
+  font-weight: 400;
+}
+
+.superpower-description {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.superpower-description p {
+  width: 100%;
+}
+.superpower-description .superpower-img__container {
+  display: flex;
+  gap: 8px;
+}
+
+.superpower-img__red {
+  width: 16px;
+  height: 16px;
+  background: url(../assets/img/snowflake-red.png) center center/cover no-repeat;
+}
+
+.superpower-img__white {
+  width: 16px;
+  height: 16px;
+  background: url(../assets/img/snowflake-white.png) center center/cover no-repeat;
+}

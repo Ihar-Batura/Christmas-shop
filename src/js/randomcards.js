@@ -44,7 +44,7 @@ function createFourCards(arrayCards) {
   for (let i = 0; i < 4; i++) {
     const numberRandomCard = randomNumber(0, arrayCards.length - 1); // получаем номер карточки
 
-    if (!wereNumbers.includes[numberRandomCard]) {
+    if (!wereNumbers.includes(numberRandomCard)) {
       //check on repeat cards
       createCard(arrayCards[numberRandomCard]);
     } else {
