@@ -1,5 +1,6 @@
 const bodyPage = document.querySelector('body');
 const modalWindow = document.querySelector('.modal');
+const isGiftsPage = document.querySelector('.section-gifts');
 
 function createModalCard(cardData) {
   const card = document.createElement('div'); // create card
@@ -94,7 +95,7 @@ function createModalCard(cardData) {
 }
 
 async function getData(cardName) {
-  const filePath = './data/gifts.json';
+  const filePath = isGiftsPage ? '../data/gifts.json' : './data/gifts.json';
   const result = await fetch(filePath);
   const data = await result.json();
 
