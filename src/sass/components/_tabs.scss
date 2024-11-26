@@ -31,5 +31,6 @@
   }
   &.active {
     background-color: $color-tab-hover;
+    cursor: default;
   }
 }

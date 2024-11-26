@@ -12,21 +12,27 @@ let sliderWindowWidth;
 let sliderPosition = 0;
 let step;
 let slideIndex = 0;
-let maxSlideIndex = windowWidth > 767 ? 3 : 6;
+let maxSlideIndex = windowWidth > 768 ? 3 : 6;
 
 // код для мониторинга ширины slider
 function initSliderWidth() {
   windowWidth = window.innerWidth;
   sliderWindowWidth = aboutContainer.offsetWidth;
   getSliderStep();
-  maxSlideIndex = windowWidth > 767 ? 3 : 6;
+  maxSlideIndex = windowWidth > 768 ? 3 : 6;
+  // код для: При изменении ширины экрана слайдер линия возвращается в исходное положение, и её можно полностью прокрутить нажав необходимое количество кнопок со стрелками (работает без перезагрузки страницы)
+  sliderPosition = 0;
+  sliderLine.style.left = sliderPosition + 'px';
+  slideIndex = 0;
+  btnPrev.classList.add('inactive-btn');
+  btnNext.classList.remove('inactive-btn');
 }
 window.addEventListener('resize', initSliderWidth);
 initSliderWidth();
 
 // код для движения слайдера
 function getSliderStep() {
-  if (windowWidth > 767) {
+  if (windowWidth > 768) {
     step = Math.ceil((sliderWidth - sliderWindowWidth) / 3);
   } else {
     step = Math.ceil((sliderWidth - sliderWindowWidth) / 6);
