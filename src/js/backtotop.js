@@ -4,7 +4,7 @@ let windowWidth;
 let windowScroll;
 
 function showBtnTop() {
-  if (windowWidth <= 768 && windowScroll > 100) {
+  if (windowWidth <= 768 && windowScroll > 299) {
     btnBackToTop.classList.add('active');
   } else {
     btnBackToTop.classList.remove('active');
