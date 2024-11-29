@@ -126,6 +126,7 @@ modalWindow.addEventListener('click', (event) => {
 
 function startListenCards() {
   const cards = document.querySelectorAll('.gift-card');
+  console.log(cards);
 
   cards.forEach((card) =>
     card.addEventListener('click', () => {
@@ -136,4 +137,6 @@ function startListenCards() {
   );
 }
 
-setTimeout(startListenCards, 100);
+window.addEventListener('load', function () {
+  setTimeout(startListenCards, 10);
+});
