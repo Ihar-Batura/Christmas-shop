@@ -1,3 +1,5 @@
+import startListenCard from './modal.js';
+
 const cardsContainer = document.querySelector('.gifts-card__container');
 
 function randomNumber(min, max) {
@@ -8,6 +10,8 @@ function createCard(cardData) {
   const card = document.createElement('div'); // create card
   card.className = 'gift-card';
   cardsContainer.appendChild(card); // add cart to cards container
+
+  startListenCard(card); // добавил слушатель событий при нажатии на карточку формируется модальное окно
 
   const cardImg = document.createElement('div'); // create card picture
   cardImg.className = 'gift-card__img';

@@ -124,19 +124,29 @@ modalWindow.addEventListener('click', (event) => {
   }
 });
 
-function startListenCards() {
-  const cards = document.querySelectorAll('.gift-card');
-  console.log(cards);
-
-  cards.forEach((card) =>
-    card.addEventListener('click', () => {
-      const cardName = card.childNodes[1].childNodes[1].innerHTML;
-      openModal();
-      getData(cardName);
-    })
-  );
+export default function startListenCard(card) {
+  card.addEventListener('click', function () {
+    const cardName = card.childNodes[1].childNodes[1].innerHTML;
+    openModal();
+    getData(cardName);
+  });
 }
 
-window.addEventListener('load', function () {
-  setTimeout(startListenCards, 10);
-});
+// Эту часть пришлось переделать, т.к появлялся баг при загрузке странице не сразу открывалось модальное окно при нажатии на карточку!!!
+
+// function startListenCards() {
+//   const cards = document.querySelectorAll('.gift-card');
+//   console.log(cards);
+
+//   cards.forEach((card) =>
+//     card.addEventListener('click', () => {
+//       const cardName = card.childNodes[1].childNodes[1].innerHTML;
+//       openModal();
+//       getData(cardName);
+//     })
+//   );
+// }
+
+// window.addEventListener('load', function () {
+//   setTimeout(startListenCards, 10);
+// });

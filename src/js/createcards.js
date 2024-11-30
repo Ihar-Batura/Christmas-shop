@@ -1,3 +1,5 @@
+import startListenCard from './modal.js';
+
 // code for create cards in gifts page
 // Yes, I know that I can make more clean code but I repeat functional from randomcards.js
 
@@ -7,6 +9,8 @@ function createCard(cardData) {
   const card = document.createElement('div'); // create card
   card.className = 'gift-card';
   cardsContainer.appendChild(card); // add cart to cards container
+
+  startListenCard(card); // добавил слушатель событий при нажатии на карточку формируется модальное окно
 
   const cardImg = document.createElement('div'); // create card picture
   cardImg.className = 'gift-card__img';
